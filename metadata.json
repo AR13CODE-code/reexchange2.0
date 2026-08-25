@@ -1,0 +1,6 @@
+{
+  "name": "RExchange",
+  "description": "SRM IST Kattankulathur campus exchange and sports tournament platform for sharing resources, skills, study materials, and campus leagues.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
