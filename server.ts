@@ -1427,7 +1427,17 @@ if (process.env.VERCEL !== "1") {
       res.sendFile(path.join(distPath, "index.html"));
     });
 
-    const PORT = Number(process.env.PORT) || 3000;
+    if (!process.env.VERCEL) {
+  const PORT = Number(process.env.PORT) || 3000;
+
+  
+    app.listen(PORT, "0.0.0.0", () => {
+    console.log(
+      `RExchange server active on http://0.0.0.0:${PORT}`
+    );
+  });
+}
+}
 
     app.listen(PORT, "0.0.0.0", () => {
       console.log(
